@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<questions>
+    <question id="1">
+        <text>A calçada está pavimentada?</text>
+    </question>
+    <question id="2">
+        <text>O pavimento da calçada é regular e firme, sem buracos?</text>
+    </question>
+    <question id="3">
+        <text>Há degraus ou desníveis na calçada?</text>
+    </question>
+    <question id="4">
+        <text>Quando há degraus ou desníveis, eles são no máximo de 0,5 cm?</text>
+    </question>
+    <question id="5">
+        <text>Quando há degraus ou desníveis, eles são entre 0,5cm e 2 cm?</text>
+    </question>
+    <question id="6">
+        <text>Quando há degraus ou desníveis de 0,5 cm a 2 cm, há uma rampa com até 50% de inclinação?</text>
+    </question>
+    <question id="7">
+        <text>A calçada possui inclinações transversais?</text>
+    </question>
+    <question id="8">
+        <text>As inclinações transversais são de no máximo 3%?</text>
+    </question>
+    <question id="9">
+        <text>A calçada acompanha a inclinação longitudinal da via?</text>
+    </question>
+    <question id="10">
+        <text>A calçada possui faixa livre para circulação de pedestres com largura mínima de 1,20 m?</text>
+    </question>
+    <question id="11">
+        <text>Há obstáculos verticais, tais como placas, beirais, ramos de árvores?</text>
+    </question>
+    <question id="12">
+        <text>A altura livre de obstáculos da calçada é de no mínimo 2,10 m?</text>
+    </question>
+    <question id="13">
+        <text>Há mobiliário urbano (canteiros, bancos, lixeiras, etc) na calçada?</text>
+    </question>
+    <question id="14">
+        <text>O mobiliário urbano encontra-se na faixa de serviço, fora da faixa livre de circulação de pedestres?</text>
+    </question>
+    <question id="15">
+        <text>Há árvores e vegetação na calçada?</text>
+    </question>
+    <question id="16">
+        <text>As árvores e vegetação encontram-se na faixa de serviço, fora da faixa livre de circulação de pedestres?</text>
+    </question>
+    <question id="17">
+        <text>As raízes, espinhos e outros elementos das árvores e vegetação encontram-se fora da faixa livre de circulação e das áreas de circulação de pedestres adjacentes?</text>
+    </question>
+    <question id="18">
+        <text>Há pontos de embarque e desembarque de transporte público na calçada?</text>
+    </question>
+    <question id="19">
+        <text>Os pontos de embarque e desembarque de transporte público encontram-se fora da faixa livre de circulação de pedestres?</text>
+    </question>
+    <question id="20">
+        <text>Há acesso de veículos aos lotes ou à estacionamentos na calçada?</text>
+    </question>
+    <question id="21">
+        <text>Os desníveis ocasionados pelo acesso de veículos encontram-se fora da faixa livre de circulação de pedestres?</text>
+    </question>
+    <question id="22">
+        <text>Há alarme, com sinalização sonora e visual, na saída de garagens e acesso de veículos?</text>
+    </question>
+    <question id="23">
+        <text>O portão de acesso a estacionamentos e garagem funciona sem interferir na faixa livre de circulação de pedestres?</text>
+    </question>
+    <question id="24">
+        <text>Há obras existentes sobre o passeio?</text>
+    </question>
+    <question id="25">
+        <text>Mesmo com as obras sobre o passeio, há garantia de faixa livre de 1,20 m de circulação?</text>
+    </question>
+    <question id="26">
+        <text>Há sinalização tátil direcional na calçada?</text>
+    </question>
+    <question id="27">
+        <text>A sinalização tátil direcional é antiderrapante, com relevo e cor contrastante?</text>
+    </question>
+    <question id="28">
+        <text>Há sinalização tátil de alerta na calçada em mudanças de direção, opções ou interferências de percurso?</text>
+    </question>
+    <question id="29">
+        <text>A sinalização tátil de alerta é antiderrapante, com relevo e cor contrastante?</text>
+    </question>
+    <question id="30">
+        <text>Existe faixa de travessia de pedestres?</text>
+    </question>
+    <question id="31">
+        <text>O acesso à travessia possui sinalização tátil de alerta?</text>
+    </question>
+    <question id="32">
+        <text>A sinalização tátil de alerta é antiderrapante, com relevo e cor contrastante?</text>
+    </question>
+    <question id="33">
+        <text>A travessia possui sinalização tátil direcional?</text>
+    </question>
+    <question id="34">
+        <text>A sinalização tátil direcional é antiderrapante, com relevo e cor contrastante?</text>
+    </question>
+    <question id="35">
+        <text>A calçada é alargada nos dois lados da via para reduzir o percurso de travessia?</text>
+    </question>
+    <question id="36">
+        <text>A faixa de pedestres é elevada?</text>
+    </question>
+    <question id="37">
+        <text>Há rebaixamento da calçada nos dois lados da rua?</text>
+    </question>
+    <question id="38">
+        <text>O rebaixamento possui inclinação menor que 8,33% (1:12)?</text>
+    </question>
+    <question id="39">
+        <text>O piso no término do rebaixamento é nivelado com a via?</text>
+    </question>
+    <question id="40">
+        <text>A largura da rampa central do rebaixamento é de, no mínimo, 1,20 m (ou 1,50 m entre canteiros)?</text>
+    </question>
+    <question id="41">
+        <text>Há canteiro divisor de pistas na travessia?</text>
+    </question>
+    <question id="42">
+        <text>O canteiro possui rebaixamento com largura igual a da faixa de travessia ou é com faixa elevada?</text>
+    </question>
+    <question id="43">
+        <text>Existe semáforo para pedestre?</text>
+    </question>
+    <question id="44">
+        <text>O semáforo possui sinal sonoro ou vibratório?</text>
+    </question>
+    <question id="45">
+        <text>Os semáforos podem ser acionados manualmente, pelos pedestres?</text>
+    </question>
+    <question id="46">
+        <text>Há sinalização tátil direcional alinhada ao foco de acionamento do semáforo?</text>
+    </question>
+    <question id="47">
+        <text>O tempo de travessia atende à uma pessoa com mobilidade reduzida (v = 0,4m/s)?</text>
+    </question>
+</questions>
