@@ -43,7 +43,7 @@ public class ReviewController {
 	}
 	
 	@GetMapping("/reviewList")
-	public ResponseEntity<List<Review>> getAllByEmail (@RequestParam @Email String email) {
+	public ResponseEntity<List<ReviewDTO>> getAllByEmail (@RequestParam @Email String email) {
 		return service.getAllByEmail(email);
 	}
 	

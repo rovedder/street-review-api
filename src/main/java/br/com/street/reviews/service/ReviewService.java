@@ -62,8 +62,6 @@ public class ReviewService {
 			List<Answer> newAnswers = new ArrayList<Answer>();
 			newAnswers = form.getAnswers();
 			
-			logger.info("thats the id: " + newReview.getId());
-			
 			for(int i = 0; i < newAnswers.size(); i++) 
 				newAnswers.get(i).setReviewId(newReview.getId());
 
@@ -76,11 +74,18 @@ public class ReviewService {
 		}
 	}
 
-	public ResponseEntity<List<Review>> getAllByEmail(String email) {
+	public ResponseEntity<List<ReviewDTO>> getAllByEmail(String email) {
 		try {
-			List<Review> list = reviewRepository.findAllByEmail(email);
+			List<Review> listReview = reviewRepository.findAllByEmail(email);
+			List<ReviewDTO> listDTO = new ArrayList<ReviewDTO>();
 			
-			return ResponseEntity.status(HttpStatus.OK).body(list);
+			for(Review review: listReview) {
+				ReviewDTO newDto = new ReviewDTO(review);
+				
+				listDTO.add(newDto);
+			}
+			
+			return ResponseEntity.status(HttpStatus.OK).body(listDTO);
 			
 		} catch (Exception e) {
 			logger.error(e.getMessage());
@@ -101,32 +106,10 @@ public class ReviewService {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
 		}
 		
-		String filePath = "./review-" + review.getId();
+		String filePath = "./PDF/review-" + review.getId() + ".pdf";
 		
 		ReviewPDF pdf = new ReviewPDF(); 
-		pdf.generatePDF(answers, review);
-		
-		File file = new File(filePath);
-		
-		try {
-            OutputStream os = new FileOutputStream(file);
-  
-            os.write(ReviewPDF.getFile().toByteArray());
-  
-            os.close();
-        } catch (Exception e) {
-        	logger.error(e.getMessage());
-			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
-		}
-		
-		Mail mail = new Mail();
-		
-		mail.setEmail(review.getEmail());
-		mail.setSubject("Exportacao street review");
-		mail.setMessage("message");
-		mail.setDocument(file);
-		
-		emailService.sendMail(mail);
+		pdf.generatePDF(answers, review, filePath);
 		
 		return ResponseEntity.status(HttpStatus.OK).body(null);
 	}

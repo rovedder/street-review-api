@@ -1,6 +1,9 @@
 package br.com.street.reviews.service.dto;
 
+import java.util.List;
+
 import br.com.street.reviews.model.Address;
+import br.com.street.reviews.model.Answer;
 import br.com.street.reviews.model.Review;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,4 +20,5 @@ public class ReviewDTO {
 		this.setEmail(review.getEmail());
 		this.setAddress(review.getAddress());
 	}
+	
 }

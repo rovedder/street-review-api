@@ -1,6 +1,5 @@
 package br.com.street.reviews.service.helper;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -29,8 +28,6 @@ import br.com.street.reviews.Application;
 import br.com.street.reviews.model.Answer;
 import br.com.street.reviews.model.Question;
 import br.com.street.reviews.model.Review;
-import lombok.Getter;
-import lombok.Setter;
 
 public class ReviewPDF {
 	
@@ -45,15 +42,12 @@ public class ReviewPDF {
     private static Font smallBold = new Font(Font.FontFamily.TIMES_ROMAN, 12,
             Font.BOLD);
     
-    @Getter
-    @Setter
-    private static ByteArrayOutputStream file = new ByteArrayOutputStream();
 	
-	public  void generatePDF(List<Answer> answers, Review review) throws IOException, ParserConfigurationException {
+	public  void generatePDF(List<Answer> answers, Review review, String filePath) throws IOException, ParserConfigurationException {
 		Document pdf = new Document();
 		
 		try {
-			PdfWriter.getInstance(pdf, file);
+			PdfWriter.getInstance(pdf, new FileOutputStream(filePath));
 			pdf.open();
 
 			addHeader(pdf, review);
